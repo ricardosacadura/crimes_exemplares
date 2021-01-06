@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Solide Mirage_Etroit';
+    src:    url('../webfonts/Etroit/Solide_Mirage-Etroit_web.eot');
+    src:    url('../webfonts/Etroit/Solide_Mirage-Etroit_web.eot?#iefix') format('embedded-opentype'),
+            url('../webfonts/Etroit/Solide_Mirage-Etroit_web.woff') format('woff'),
+            url('../webfonts/Etroit/Solide_Mirage-Etroit_web.woff2') format('woff2'),
+            url('../webfonts/Etroit/Solide_Mirage-Etroit_web.ttf') format('truetype'),
+            url('../webfonts/Etroit/Solide_Mirage-Etroit_web.svg#svgFontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OCR_A';
+    src:    url('../webfonts/OCR/OCRAStd.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+  cursor: url('../img/cursor.png'), auto;
+}
+
+h1{
+    margin-top: 40px;
+    font-family: 'Solide Mirage_Etroit';
+    font-size: 30px;
+
+}
+
+p{
+  font-family: 'OCR_A';
+  font-size: 16px;
+}
+
+#intro span{
+  margin-left: 40px;
+}
+
+#intro h1{
+  text-align: center;
+}
+
+.container-crimes {
+  display: grid;
+  /*largura do container*/
+  width: 75%;
+  /*centar*/
+  margin:0 auto;
+  /*isto significa que a grid é de 4 colunas*/
+  grid-template-columns: repeat(3, 1fr);
+
+}
+
+.crime {
+  width: 150px;
+  height:150px;
+  /*isto aumenta o espaçamento entre as cards*/
+  margin: 5%;
+  align-self: center;
+  justify-self: center;
+}
+.crime a{
+  cursor: url('../img/cursor.png'), auto;
+}
+
+.crime:hover{
+  opacity: 70%;
+  transition: 0.2s;
+  transform: scale(1.05 , 1.05);
+}
+
+.container-nav{
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-nav a{
+  font-family: 'OCR_A';
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.container-nav a:hover{
+  text-decoration: underline;
+  color:red;
+}
