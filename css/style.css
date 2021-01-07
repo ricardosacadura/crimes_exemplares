@@ -50,7 +50,7 @@ p{
   display: grid;
   /*largura do container*/
   width: 75%;
-  /*centar*/
+  /*centrar*/
   margin:0 auto;
   /*isto significa que a grid é de 4 colunas*/
   grid-template-columns: repeat(3, 1fr);
@@ -65,6 +65,7 @@ p{
   align-self: center;
   justify-self: center;
 }
+
 .crime a{
   cursor: url('../img/cursor.png'), auto;
 }
