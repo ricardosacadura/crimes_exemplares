@@ -30,7 +30,6 @@ h1{
     margin-top: 40px;
     font-family: 'Solide Mirage_Etroit';
     font-size: 30px;
-
 }
 
 p{
@@ -44,6 +43,27 @@ p{
 
 #intro h1{
   text-align: center;
+}
+
+#info h1{
+  margin-left: 75px;
+  margin-left: 130px;
+}
+
+#info{
+  padding-bottom: 10px;
+  /*border-bottom: 3px solid black;*/
+  position: relative;
+}
+
+#info ::before{
+  content: '';
+  height: 3px;
+  width:80%;
+  background: black;
+  position:absolute;
+  left: 9%;
+  bottom: 0;
 }
 
 .container-crimes {
