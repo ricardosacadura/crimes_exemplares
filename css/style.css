@@ -17,19 +17,21 @@
     font-style: normal;
 }
 
-*{
+*, *:after, *:before{
 margin: 0;
 padding: 0;
+box-sizing: border-box;
 }
 
 body{
   cursor: url('../img/cursor.png'), auto;
+  height: 100vh;
 }
 
 h1{
-    margin-top: 40px;
+    margin-top: 30px;
     font-family: 'Solide Mirage_Etroit';
-    font-size: 30px;
+    font-size: 35px;
 }
 
 p{
@@ -45,33 +47,13 @@ p{
   text-align: center;
 }
 
-#info h1{
-  margin-left: 75px;
-  margin-left: 130px;
-}
-
-#info{
-  padding-bottom: 10px;
-  /*border-bottom: 3px solid black;*/
-  position: relative;
-}
-
-#info ::before{
-  content: '';
-  height: 3px;
-  width:80%;
-  background: black;
-  position:absolute;
-  left: 9%;
-  bottom: 0;
-}
-
 .container-crimes {
   display: grid;
   /*largura do container*/
   width: 75%;
   /*centrar*/
   margin:0 auto;
+  margin-top: 20px;
   /*isto significa que a grid é de 4 colunas*/
   grid-template-columns: repeat(3, 1fr);
 
@@ -95,24 +77,91 @@ p{
   transition: 0.2s;
   transform: scale(1.05 , 1.05);
 }
+.navbar{
+  bottom:0;
+  width: 100%;
+  position: absolute;
+  height: 10vh;
+  margin-bottom: 5vh;
+}
 
 .container-nav{
-  width: 75%;
-  margin: 0 auto;
-  margin-top: 40px;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-around;
 }
 
 .container-nav a{
   font-family: 'OCR_A';
-  font-size: 16px;
+  font-size: 18px;
   color: black;
   text-decoration: none;
   transition: 0.2s;
+  margin-right: 100%;
+}
+
+.container-nav a:last-of-type{
+  margin-right: 0%;
 }
 
 .container-nav a:hover{
   text-decoration: underline;
   color:red;
+}
+
+.info h1{
+  margin-left: 10%;
+}
+
+.info{
+  padding-bottom: 10px;
+  /*border-bottom: 3px solid black;*/
+  position: relative;
+}
+
+.info a{
+  position: absolute;
+  padding: 0;
+  margin:0;
+}
+
+.info ::before{
+  content: '';
+  height: 3px;
+  width:80%;
+  background: black;
+  position:absolute;
+  left: 10%;
+  bottom: 0;
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='col-']{
+  float: left;
+  margin-top: 20px;
+  margin-right: 2%;
+  border: 3px solid black;
+}
+
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
+.col-main-content{
+  width:70%;
+}
+
+.col-sidebar{
+  width:8%;
+  height:600px;
 }
