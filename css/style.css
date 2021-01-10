@@ -24,8 +24,8 @@ box-sizing: border-box;
 }
 
 body{
-  cursor: url('../img/cursor.png'), auto;
-  height: 100vh;
+  cursor: url('../img/black_cursor.png'), auto;
+  height: 90vh;
 }
 
 h1{
@@ -50,10 +50,10 @@ p{
 .container-crimes {
   display: grid;
   /*largura do container*/
-  width: 75%;
+  width: 100%;
   /*centrar*/
   margin:0 auto;
-  margin-top: 20px;
+  margin-top: 25px;
   /*isto significa que a grid é de 4 colunas*/
   grid-template-columns: repeat(3, 1fr);
 
@@ -69,7 +69,12 @@ p{
 }
 
 .crime a{
-  cursor: url('../img/cursor.png'), auto;
+  cursor: url('../img/black_cursor.png'), auto;
+}
+
+.crime img{
+  max-width: 100%;
+  height: auto;
 }
 
 .crime:hover{
@@ -89,8 +94,7 @@ p{
   width: auto;
   position: absolute;
   top: 50%;
-  left: 50%;
-  margin-right: -50%;
+  left: 50.8%;
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-around;
@@ -102,7 +106,7 @@ p{
   color: black;
   text-decoration: none;
   transition: 0.2s;
-  margin-right: 100%;
+  margin-right: 118%;
 }
 
 .container-nav a:last-of-type{
@@ -110,58 +114,7 @@ p{
 }
 
 .container-nav a:hover{
+  cursor: url('../img/black_cursor.png'), auto;
   text-decoration: underline;
   color:red;
-}
-
-.info h1{
-  margin-left: 10%;
-}
-
-.info{
-  padding-bottom: 10px;
-  /*border-bottom: 3px solid black;*/
-  position: relative;
-}
-
-.info a{
-  position: absolute;
-  padding: 0;
-  margin:0;
-}
-
-.info ::before{
-  content: '';
-  height: 3px;
-  width:80%;
-  background: black;
-  position:absolute;
-  left: 10%;
-  bottom: 0;
-}
-
-.grid:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-[class*='col-']{
-  float: left;
-  margin-top: 20px;
-  margin-right: 2%;
-  border: 3px solid black;
-}
-
-[class*='col-']:last-of-type {
-  padding-right: 0;
-}
-
-.col-main-content{
-  width:70%;
-}
-
-.col-sidebar{
-  width:8%;
-  height:600px;
 }
