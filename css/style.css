@@ -53,14 +53,14 @@ p{
   width: 100%;
   /*centrar*/
   margin:0 auto;
-  margin-top: 2%;
+  margin-top: 1%;
   /*isto significa que a grid é de 4 colunas*/
   grid-template-columns: repeat(3, 1fr);
 
 }
 
 .crime {
-  width: 27%;
+  width: 29%;
   height:auto;
   /*isto aumenta o espaçamento entre as cards*/
   margin: 6%;

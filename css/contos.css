@@ -22,7 +22,7 @@
 
 .grid:after {
   content: "";
-  display: table;
+  display: flex;
   clear: both;
 }
 
@@ -52,7 +52,7 @@
 
 .col-main-content{
   width:80%;
-  height: 600px;
+  height:72vh;
   background-color: #808080;
 }
 
