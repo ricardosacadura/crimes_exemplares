@@ -53,7 +53,7 @@ p{
   width: 100%;
   /*centrar*/
   margin:0 auto;
-  margin-top: 25px;
+  margin-top: 1%;
   /*isto significa que a grid é de 4 colunas*/
   grid-template-columns: repeat(3, 1fr);
 
