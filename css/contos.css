@@ -1,6 +1,6 @@
-.info h1{
+/*.info h1{
   margin-left: 11%;
-}
+}*/
 
 .info{
   padding-bottom: 10px;
@@ -8,19 +8,9 @@
   position: relative;
 }
 
-.info ::before{
-  content: '';
-  height: 4px;
-  width:80%;
-  background: black;
-  position:absolute;
-  left: 11%;
-  bottom: 0;
-}
-
 .info img{
   position: absolute;
-  top: 10%;
+  top: 360%;
   left:3.5%;
 }
 
@@ -38,7 +28,7 @@
 
 [class*='col-']{
   float: left;
-  margin-top: 40px;
+  margin-top: 113px;
   margin-right: 2%;
 
 }
@@ -61,7 +51,9 @@
 }
 
 .col-main-content{
-  width:70%;
+  width:80%;
+  height: 600px;
+  background-color: #808080;
 }
 
 .col-sidebar{
@@ -92,4 +84,27 @@
   opacity: 70%;
   transition: 0.2s;
   transform: scale(1.05 , 1.05);
+}
+
+.navbar {
+  animation: one-time-animation 1s forwards 1;
+  /*animation-duration: 1s;*/
+  animation-name: slidein;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@keyframes slidein {
+  from {
+    margin-bottom: 5vh;
+    width: 70%;
+  }
+
+  to {
+    margin-bottom: 88vh;
+    width: 70%;
+  }
 }
