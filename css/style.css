@@ -174,9 +174,31 @@ a{
 }
 
 
-/*não está a funcionar*/
-@media only screen and (max-device-width: 700px) {
+/* For mobile phones */
+@media screen and (max-width: 600px) {
+
   .container-crimes {
-    height: 90vw;
+   height: 80vh;
+  }
+  .crime {
+    width: 60%;
+  }
+}
+
+
+  /* For tablets: */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .container-crimes {
+   height: 75vh;
+  }
+  .crime {
+    width: 65%;
+  }
+}
+
+/* For desktop computer */
+@media screen and (min-width: 768px) {
+  .crime {
+    width: 20vh;
   }
 }
