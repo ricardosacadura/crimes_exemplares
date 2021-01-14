@@ -21,10 +21,10 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+cursor: url('../img/black_cursor.png'), auto;
 }
 
 body{
-  cursor: url('../img/black_cursor.png'), auto;
   height: 90vh;
 }
 
@@ -51,11 +51,13 @@ p{
   display: grid;
   /*largura do container*/
   width: 100%;
+
   /*centrar*/
   margin:0 auto;
   margin-top: 1%;
-  /*isto significa que a grid é de 4 colunas*/
+  /*isto significa que a grid é de 4 colunas/edit:4 ou 3*/
   grid-template-columns: repeat(3, 1fr);
+
 
 }
 
@@ -69,7 +71,7 @@ p{
 }
 
 .crime a{
-  cursor: url('../img/black_cursor.png'), auto;
+
 }
 
 .crime img{
@@ -82,6 +84,7 @@ p{
   transition: 0.2s;
   transform: scale(1.05 , 1.05);
 }
+
 .navbar{
   bottom:0;
   width: 100%;
@@ -89,9 +92,49 @@ p{
   height: 10vh;
   margin-bottom: 5vh;
 }
+/*
+.container-nav a{
+  font-family: 'OCR_A';
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  transition: 0.2s;
+
+}
+
+
+começa aqui!*/
+
+ul{
+
+  width: 100%;
+  top: 50%; left: 50%;
+
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+  display: inline-flex;
+  justify-content: space-around;
+
+}
+
+li{
+  position: relative;
+  font-family: 'OCR_A';
+  font-size: 20px;
+  display: inline-block;
+  padding: 0px 15px;
+  color: black;
+}
 
 .container-nav{
-  width: auto;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+
+
   position: absolute;
   top: 50%;
   left: 50.8%;
@@ -100,21 +143,40 @@ p{
   justify-content: space-around;
 }
 
-.container-nav a{
-  font-family: 'OCR_A';
-  font-size: 18px;
-  color: black;
+a{
   text-decoration: none;
-  transition: 0.2s;
-  margin-right: 118%;
+  color: black;
 }
 
+.linknav{
+  position: relative;
+}
+
+.linknav:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: red;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+
+.linknav:hover:after{
+  width: 100%;
+  left: 0;
+  background: red;
+}
 .container-nav a:last-of-type{
   margin-right: 0%;
 }
 
-.container-nav a:hover{
-  cursor: url('../img/black_cursor.png'), auto;
-  text-decoration: underline;
-  color:red;
+
+/*não está a funcionar*/
+@media only screen and (max-device-width: 700px) {
+  .container-crimes {
+    height: 90vw;
+  }
 }
