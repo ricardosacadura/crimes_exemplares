@@ -39,6 +39,21 @@ p{
   font-size: 16px;
 }
 
+#intro h1{
+  visibility: visible;
+}
+
+#intro h1:hover + #selecao {visibility: visible;}
+
+#selecao{
+  margin-top:1vh;
+  text-align: center;
+  font-family: 'OCR_A';
+  font-size: 20px;
+    color: red;
+  visibility: hidden;
+}
+
 #intro span{
   margin-left: 40px;
 }
@@ -53,7 +68,7 @@ p{
   width: 100%;
   /*centrar*/
   margin:0 auto;
-  margin-top: 1%;
+  margin-top: 0%;
   /*isto significa que a grid é de 4 colunas/edit:4 ou 3*/
   grid-template-columns: repeat(3, 1fr);
 }
@@ -62,7 +77,7 @@ p{
   width: 27%;
   height:auto;
   /*isto aumenta o espaçamento entre as cards*/
-  margin: 6%;
+  margin: 3%;
   align-self: center;
   justify-self: center;
 }
@@ -83,7 +98,7 @@ p{
   width: 100%;
   position: absolute;
   height: 10vh;
-  margin-bottom: 5vh;
+  margin-bottom: 6vh;
 }
 
 ul{
