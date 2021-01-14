@@ -202,3 +202,8 @@ a{
     width: 20vh;
   }
 }
+
+.fundo{
+  background:red;
+  transition: 0.5s;
+}

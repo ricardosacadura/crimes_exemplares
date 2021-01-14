@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <title>Crimes Exemplares</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/info.css">
 
@@ -10,13 +11,31 @@
 
 
     <script src="jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
 
-    <title>Crimes Exemplares</title>
+      $(document).ready(function){
+        $(window).scroll(function){
+          if ($(this).scrollTop()>20) {
+            $(.fundo).css({"opacity":"0"})
+          }
+          else {
+            $(.fundo).css({"opacity":"1"})
+          }
+        })
+      })
+
+    </script>
   </head>
-  <body>
+
+  <body class="fundo">
     <main>
+
       <section id="intro">
-              <h1>MAX AUB<span>CRIMES EXEMPLARES</span></h1>
+              <h1>
+                <span>MAX AUB</span><span>CRIMES EXEMPLARES</span>
+              </h1>
+
 
                 <div class="container-crimes">
                   <div class="crime">
@@ -63,6 +82,5 @@
       </div>
 
     </footer>
-
   </body>
 </html>
