@@ -34,6 +34,7 @@ h1{
     font-size: 35px;
 }
 
+
 p{
   font-family: 'OCR_A';
   font-size: 16px;
@@ -46,6 +47,7 @@ p{
 #intro h1{
   text-align: center;
 }
+
 
 .container-crimes {
   display: grid;
@@ -128,7 +130,7 @@ li{
 }
 
 .container-nav{
-  width: 75%;
+  width: 65%;
   margin: 0 auto;
   margin-top: 40px;
   display: flex;
@@ -148,6 +150,10 @@ a{
   color: black;
 }
 
+a:hover{
+  color:red;
+}
+
 .linknav{
   position: relative;
 }
@@ -157,7 +163,7 @@ a{
   position: absolute;
   width: 0; height: 3px;
   display: block;
-  margin-top: 5px;
+  margin-top: 1px;
   right: 0;
   background: red;
   transition: width .2s ease;
@@ -201,9 +207,4 @@ a{
   .crime {
     width: 20vh;
   }
-}
-
-.fundo{
-  background:red;
-  transition: 0.5s;
 }
