@@ -34,7 +34,6 @@ h1{
     font-size: 35px;
 }
 
-
 p{
   font-family: 'OCR_A';
   font-size: 16px;
@@ -48,19 +47,15 @@ p{
   text-align: center;
 }
 
-
 .container-crimes {
   display: grid;
   /*largura do container*/
   width: 100%;
-
   /*centrar*/
   margin:0 auto;
   margin-top: 1%;
   /*isto significa que a grid é de 4 colunas/edit:4 ou 3*/
   grid-template-columns: repeat(3, 1fr);
-
-
 }
 
 .crime {
@@ -70,10 +65,6 @@ p{
   margin: 6%;
   align-self: center;
   justify-self: center;
-}
-
-.crime a{
-
 }
 
 .crime img{
@@ -94,6 +85,7 @@ p{
   height: 10vh;
   margin-bottom: 5vh;
 }
+
 /*
 .container-nav a{
   font-family: 'OCR_A';
@@ -108,7 +100,6 @@ p{
 começa aqui!*/
 
 ul{
-
   width: 100%;
   top: 50%; left: 50%;
 
@@ -135,8 +126,6 @@ li{
   margin-top: 40px;
   display: flex;
   justify-content: space-around;
-
-
   position: absolute;
   top: 50%;
   left: 50.8%;
@@ -190,7 +179,6 @@ a:hover{
     width: 60%;
   }
 }
-
 
   /* For tablets: */
 @media screen and (min-width: 600px) and (max-width: 768px) {
