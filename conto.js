@@ -1,18 +1,21 @@
-window.addEventListener('scroll', () => {
-  document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-}, false);
+function saidiabo(event) {
+  event.preventDefault();
 
 
+  //lê o y (- para ir para o scroll ser para baixo, o numero é a velocidade a que acontece,quanto menor mais lento)
+  opacidade += event.deltaY * -0.0004;
 
+  // Restrict scale
+  opacidade = Math.min(Math.max(0, opacidade), 1);
 
-//outra tentativa exemplo
+  // Apply scale transform
+  ret.style.opacity = opacidade;
 
-// When the user scrolls the page, execute myFunction
-//window.onscroll = function() {myFunction()};
+  if (opacidade == 0){
+    ret.style.zIndex = -1;
+  }
+}
 
-//function myFunction() {
-//  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-//  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-//  var scrolled = (winScroll / height) * 100;
-//  document.getElementById("myBar").style.width = scrolled + "%";
-//}
+let opacidade = 1;
+let ret = document.querySelector('.retangulo');
+ret.onwheel = saidiabo;
