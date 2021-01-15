@@ -32,6 +32,20 @@ cursor: url('../img/black_cursor.png'), auto;
   visibility: visible;
   background: #BB2026;
   z-index: 2;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+@keyframes cimabaixo {
+  0%   {color:white; top:100px;}
+  50%   {color:#BB2026; top:0px;}
+  100% {color:white; top:100px;}
+}
+#arraste{
+color: white;
+text-align: center;
+vertical-align: middle;
+animation: cimabaixo 1s linear infinite;
 }
 
 body{
