@@ -24,23 +24,36 @@ box-sizing: border-box;
 cursor: url('../img/black_cursor.png'), auto;
 }
 
-/*.retangulo{
+.retangulo{
   width: 100%;
   height: 100%;
   background-color: red;
   position: fixed;
-  /*visibility: visible;*/
+  visibility: visible;
+  background: #BB2026;
   z-index: 2;
 
-    background: #BB2026;
+  /*animação*/
+  animation: saidiabo 4s linear;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -3s); /*quando começar*/
 
-    color: #fff;
-    text-align: center;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; /*fica com a ultima indicação*/
 }
 
- *{
+@keyframes saidiabo {
+  to {
+    opacity: 0;
+    z-index: -1;
+
+
+  }
+}
+
+ /**{
   visibility: hidden;
-} */
+}*/
 
 body{
   height: 90vh;
