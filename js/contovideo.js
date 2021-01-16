@@ -8,11 +8,12 @@ function supportsHEVCAlpha() {
     return isSafari && hasMediaCapabilities
         }
 
+//se for internet explorer11 (não supportsHEVCAlpha)
 function isIE11()
 {
     return !!window.navigator.userAgent.match(/Trident\/7\./,[]);
 }
-
+//caso não seja, execute
 if (!isIE11()) {
     const player = document.getElementById('player');
     player.src = supportsHEVCAlpha() ? 'https://doggo.s3.amazonaws.com/output.mov': 'https://doggo.s3.amazonaws.com/output.webm';
