@@ -16,5 +16,5 @@ function isIE11()
 //caso não seja, execute
 if (!isIE11()) {
     const player = document.getElementById('player');
-    player.src = supportsHEVCAlpha() ? 'https://doggo.s3.amazonaws.com/output.mov': 'https://doggo.s3.amazonaws.com/output.webm';
+    player.src = supportsHEVCAlpha() ? 'vid/teste.mov': 'vid/teste.webm';
 }
