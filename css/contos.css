@@ -73,7 +73,6 @@
   height: auto;
   align-self: center;
   justify-self: center;
-  cursor: url('../img/black_cursor.png'), auto;
 }
 
 .crime-info:hover{
@@ -84,12 +83,8 @@
 
 .navbar {
   animation: one-time-animation 1s forwards 1;
-  /*animation-duration: 1s;*/
   animation-name: slidein;
-  top:0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top:0; bottom: 0;left: 0; right: 0;
   margin: auto;
 }
 

@@ -1,35 +1,3 @@
-.info h1{
-  margin-left: 11%;
-}
-
-.info{
-  padding-bottom: 10px;
-  /*border-bottom: 3px solid black;*/
-  position: relative;
-}
-
-.info ::before{
-  content: '';
-  height: 4px;
-  width:80%;
-  background: black;
-  position:absolute;
-  left: 11%;
-  bottom: 0;
-}
-
-.info img{
-  position: absolute;
-  top: 10%;
-  left:3.5%;
-}
-
-.info img:hover{
-  left:2%;
-  transition: 0.4s;
-  cursor: url('../img/black_cursor.png'), auto;
-}
-
 .grid:after {
   content: "";
   display: table;
@@ -74,23 +42,36 @@
   grid-template-columns: repeat(1, 1fr);
 }
 
-.crime-info {
-  width: 100px;
-  height:100px;
-  /*isto aumenta o espaçamento entre as cards*/
-  margin:5%;
+/*header titulo e seta para ir para a homepage*/
+.info h1{
+  margin-left: 11%;
 }
 
-.crime-info img{
-  max-width: 100%;
-  height: auto;
-  align-self: center;
-  justify-self: center;
-  cursor: url('../img/black_cursor.png'), auto;
+.info{
+  padding-bottom: 10px;
+  /*border-bottom: 3px solid black;*/
+  position: relative;
 }
 
-.crime-info:hover{
-  opacity: 70%;
-  transition: 0.2s;
-  transform: scale(1.05 , 1.05);
+.info ::before{
+  content: '';
+  height: 4px;
+  width:80%;
+  background: black;
+  position:absolute;
+  left: 11%;
+  bottom: 0;
 }
+
+.info img{
+  position: absolute;
+  top: 10%;
+  left:3.5%;
+}
+
+.info img:hover{
+  left:2%;
+  transition: 0.4s;
+}
+
+/*fim */
