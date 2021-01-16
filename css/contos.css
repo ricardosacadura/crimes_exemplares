@@ -1,9 +1,4 @@
-.info{
-  padding-bottom: 10px;
-  /*border-bottom: 3px solid black;*/
-  position: relative;
-}
-
+/*header seta */
 .info img{
   position: absolute;
   top: 360%;
@@ -13,74 +8,20 @@
 .info img:hover{
   left:2%;
   transition: 0.4s;
-  cursor: url('../img/black_cursor.png'), auto;
 }
 
-.grid:after {
-  content: "";
-  display: flex;
-  clear: both;
-}
+/*adaptações da grid só para visualisar melhor depois tirar*/
 
 [class*='col-']{
-  float: left;
-  margin-top: 113px;
-  margin-right: 2%;
+  margin-top: 100px;
 
-}
-
-[class*='col-']:last-of-type {
-  padding-right: 0;
-}
-
-[class*='col-'] a{
-  color: black;
-}
-
-[class*='col-'] a:hover{
-  color: red;
-}
-
-[class*='col-'] p:hover{
-  color: red;
-  font-size: 16px;
 }
 
 .col-main-content{
   width:80%;
   height:72.63922518159806vh;
-  background-color: #808080;
+  background-color: red;
 }
-
-.col-sidebar{
-  width:8%;
-  height:650px;
-  margin-left: 1%;
-  display: grid;
-  /*isto significa que a grid é de 4 colunas*/
-  grid-template-columns: repeat(1, 1fr);
-}
-
-.crime-info {
-  width: 100px;
-  height:100px;
-  /*isto aumenta o espaçamento entre as cards*/
-  margin:5%;
-}
-
-.crime-info img{
-  max-width: 100%;
-  height: auto;
-  align-self: center;
-  justify-self: center;
-}
-
-.crime-info:hover{
-  opacity: 70%;
-  transition: 0.2s;
-  transform: scale(1.05 , 1.05);
-}
-
 
 
 /*navbar da pagina dos contos*/
