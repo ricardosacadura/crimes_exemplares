@@ -39,14 +39,14 @@ cursor: url('../img/black_cursor.png'), auto;
 }
 @keyframes cimabaixo {
   0%   {color:white; top:100px;}
-  50%   {color:#BB2026; top:0px;}
+  50%   {color:red; top:0px;}
   100% {color:white; top:100px;}
 }
 #arraste{
 color: white;
 text-align: center;
 vertical-align: middle;
-animation: cimabaixo 1s linear infinite;
+animation: cimabaixo 1.3s linear infinite;
 }
 
 /*fim do retangulo do index*/
