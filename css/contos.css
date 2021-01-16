@@ -44,10 +44,9 @@
   }
 }
 
-/*videos*/
-url(https://doggo.s3.amazonaws.com/iconfinder_paw_1608784.svg);
+/*videos
+src(https://doggo.s3.amazonaws.com/iconfinder_paw_1608784.svg);*/
   background-size: 50px 50px;
-  font-family: "Lato", sans-serif;
   --webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   max-width: 100vw;
@@ -60,33 +59,8 @@ url(https://doggo.s3.amazonaws.com/iconfinder_paw_1608784.svg);
   bottom: -85px;
   pointer-events: none;
 }
-.video-overlay__box {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background: #3a4a59;
-  transform: rotate3d(37, -12, 13, 90deg) translateX(-50%);
-  position: absolute;
-  bottom: -90px;
-  right: -80px;
-  z-index: 1;
-}
+
 #player {
   z-index: 4;
   position: relative;
-}
-@media (min-width: 768px) {
-  .product {
-    flex-direction: row;
-    padding: 50px 0 50px 50px;
-  }
-  .swiper-container {
-    width: 100%;
-    height: 600px;
-  }
-  .product__image {
-    width: 500px;
-    height: 500px;
-    max-width: 500px;
-  }
 }
