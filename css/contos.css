@@ -81,6 +81,9 @@
   transform: scale(1.05 , 1.05);
 }
 
+
+
+/*navbar da pagina dos contos*/
 .navbar {
   animation: one-time-animation 1s forwards 1;
   animation-name: slidein;
