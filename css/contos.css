@@ -18,9 +18,19 @@
 }
 
 .col-main-content{
+  position: relative;
   width:80%;
   height:72.63922518159806vh;
+}
+
+.retanguloconto{
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-color: red;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
 }
 
 
@@ -53,14 +63,31 @@ src(https://doggo.s3.amazonaws.com/iconfinder_paw_1608784.svg);*/
 }
 .video-overlay {
   position: absolute;
-  width: 360px;
-  height: 440px;
-  right: -50px;
-  bottom: -85px;
+  width: 100%;
+  height: auto;
   pointer-events: none;
 }
 
+.video-overlay__video {
+  width: 100%;
+}
+
 #player {
-  z-index: 4;
-  position: relative;
+  z-index: 1;
+  position: absolute;
+}
+
+.video-vermelho {
+  position: absolute;
+  width: 100%;
+  height: auto;
+
+  top: 0;
+  left: 0;
+
+}
+
+.video-vermelho video {
+position:absolute;
+width:100%;
 }
