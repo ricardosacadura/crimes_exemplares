@@ -91,3 +91,29 @@ src(https://doggo.s3.amazonaws.com/iconfinder_paw_1608784.svg);*/
 position:absolute;
 width:100%;
 }
+
+
+.container-arraste {
+position: absolute;
+width: 100%;
+display: inline-flex;
+align-items:center;
+justify-content:center;
+bottom:2%;
+left:0;
+
+}
+
+@keyframes cimabaixo2 {
+  0%   {color:white; top:100px;}
+  50%   {color:black; top:0px;}
+  100% {color:white; top:100px;}
+}
+#arraste2{
+color: white;
+text-align: center;
+vertical-align: middle;
+animation: cimabaixo2 1.3s ease-in ;
+animation-delay: 30s;
+animation-iteration-count: 10; /*quantas vezes corre*/
+}
