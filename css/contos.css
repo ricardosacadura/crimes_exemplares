@@ -10,8 +10,7 @@
   transition: 0.4s;
 }
 
-/*adaptações da grid só para visualisar melhor depois tirar*/
-
+/*adaptações da grid */
 [class*='col-']{
   margin-top: 100px;
 
@@ -23,26 +22,15 @@
   height:72.63922518159806vh;
 }
 
-.retanguloconto{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: red;
-  z-index: 1;
-  left: 0px;
-  top: 0px;
-}
-
-
-/*navbar da pagina dos contos*/
+/*navbar da pagina dos contos quando se abre a página*/
 .navbar {
   animation: one-time-animation 1s forwards 1;
-  animation-name: slidein;
+  animation-name: vaicima;
   top:0; bottom: 0;left: 0; right: 0;
   margin: auto;
 }
 
-@keyframes slidein {
+@keyframes vaicima {
   from {
     margin-bottom: 2.5vh;
     width: 70%;
@@ -54,18 +42,27 @@
   }
 }
 
-/*videos
-src(https://doggo.s3.amazonaws.com/iconfinder_paw_1608784.svg);*/
-  background-size: 50px 50px;
-  --webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-  max-width: 100vw;
+/*videos*/
+.container-ret-conto{
+
 }
+
+.retanguloconto{
+  position: absolute;
+  width: 100%;
+  height:105%;
+  background-color: red;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+}
+
 .video-overlay {
   position: absolute;
   width: 100%;
   height: auto;
   pointer-events: none;
+  z-index: 2;
 }
 
 .video-overlay__video {
@@ -73,7 +70,6 @@ src(https://doggo.s3.amazonaws.com/iconfinder_paw_1608784.svg);*/
 }
 
 #player {
-  z-index: 1;
   position: absolute;
 }
 
@@ -81,17 +77,14 @@ src(https://doggo.s3.amazonaws.com/iconfinder_paw_1608784.svg);*/
   position: absolute;
   width: 100%;
   height: auto;
-
   top: 0;
   left: 0;
-
 }
 
 .video-vermelho video {
 position:absolute;
 width:100%;
 }
-
 
 .container-arraste {
 position: absolute;
@@ -101,19 +94,19 @@ align-items:center;
 justify-content:center;
 bottom:2%;
 left:0;
-
 }
 
-@keyframes cimabaixo2 {
+@keyframes arrastaanim2 {
   0%   {color:white; top:100px;}
   50%   {color:black; top:0px;}
   100% {color:white; top:100px;}
 }
+
 #arraste2{
 color: white;
 text-align: center;
 vertical-align: middle;
-animation: cimabaixo2 1.3s ease-in ;
+animation: arrastaanim2 1.3s ease-in ;
 animation-delay: 30s;
 animation-iteration-count: 10; /*quantas vezes corre*/
 }

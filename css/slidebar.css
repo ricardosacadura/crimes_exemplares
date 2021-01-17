@@ -1,10 +1,3 @@
-*, *:after, *:before{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-cursor: url('../img/black_cursor.png'), auto;
-}
-
 .container-slider{
   position:absolute;
   top: 50%;

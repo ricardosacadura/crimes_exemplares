@@ -1,6 +1,5 @@
-//depois por no contovideo.js
 function saidiabo(event) {
-  event.preventDefault();
+
 
   //lê o y (- para ir para o scroll ser para baixo, o num é a velocidade a que acontece,quanto menor mais lento)
   opacidade += event.deltaY * -0.0001;
@@ -14,21 +13,13 @@ function saidiabo(event) {
  //desaparece da página
   if (opacidade == 0){
     ret.style.zIndex = -1;
+    ret.style.visibility = "hidden";
   }
 }
+
+window.setTimeout(saidiabo, 3000);
 //quando scrolla (onwheel)
 let opacidade = 1;
 let ret = document.querySelector('.retanguloconto');
+
 window.onwheel = saidiabo;
-
-//quando o video preto acaba, não funciona ainda
-
-Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
-    get: function(){
-        return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
-    }
-})
-
-if(document.querySelector('video').playing){
-
-}
