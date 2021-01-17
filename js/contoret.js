@@ -17,9 +17,6 @@ function saidiabo(event) {
   }
 }
 
-window.setTimeout(saidiabo, 3000);
-//quando scrolla (onwheel)
+//quando scrolla na página (onwheel)
 let opacidade = 1;
 let ret = document.querySelector('.retanguloconto');
-
-window.onwheel = saidiabo;

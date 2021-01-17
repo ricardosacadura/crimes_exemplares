@@ -18,3 +18,8 @@ if (!isIE11()) {
     const player = document.getElementById('player');
     player.src = supportsHEVCAlpha() ? 'vid/conto19/conto_19.mov': 'vid/conto19/conto_19.webm';
 }
+
+//retangulo podes sair :)
+setTimeout(function(){
+   window.onwheel = saidiabo;
+}, 31000); //31seg
