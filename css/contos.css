@@ -48,9 +48,10 @@
 }
 
 .retanguloconto{
+  padding-top: 52.17391304%;
   position: absolute;
   width: 100%;
-  height:105%;
+
   background-color: red;
   z-index: 1;
   left: 0px;
