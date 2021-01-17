@@ -1,3 +1,4 @@
+//video com fundo transparente
 function supportsHEVCAlpha() {
 
     const navigator = window.navigator;
@@ -19,7 +20,9 @@ if (!isIE11()) {
     player.src = supportsHEVCAlpha() ? 'vid/conto7/conto_7.mov': 'vid/conto7/conto_7.webm';
 }
 
-//retangulo podes sair :)
+//podes scrollar agora (quando o video acaba) e aparece arrasta antes de acabar o main
 setTimeout(function(){
    window.onwheel = saidiabo;
+   let main = document.querySelector('main');
+   main.insertAdjacentHTML('beforeend', '<div class="container-arraste"> <p id="arraste2"> ▲ arraste para cima ▲ </p></div> ');
 }, 25000); //25seg

@@ -106,7 +106,7 @@ left:0;
 color: white;
 text-align: center;
 vertical-align: middle;
-animation: arrastaanim2 1.3s ease-in ;
-animation-delay: 30s;
-animation-iteration-count: 10; /*quantas vezes corre*/
+animation: arrastaanim2 1.3s ease-in infinite;
+
+/*animation-iteration-count: 10; /*quantas vezes corre*/
 }

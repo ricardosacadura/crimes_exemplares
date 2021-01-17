@@ -1,7 +1,5 @@
 function saidiabo(event) {
-  event.preventDefault();
-
-
+  
   //lê o y (- para ir para o scroll ser para baixo, o numero é a velocidade a que acontece,quanto menor mais lento)
   opacidade += event.deltaY * -0.0001;
 

@@ -14,6 +14,10 @@ function saidiabo(event) {
   if (opacidade == 0){
     ret.style.zIndex = -1;
     ret.style.visibility = "hidden";
+
+//o arrasta desaparece 
+     let arraste = document.querySelector('.container-arraste');
+     arraste.remove();
   }
 }
 

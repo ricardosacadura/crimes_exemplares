@@ -21,5 +21,7 @@ if (!isIE11()) {
 
 //retangulo podes sair :)
 setTimeout(function(){
-   window.onwheel = saidiabo;
+  window.onwheel = saidiabo;
+  let main = document.querySelector('main');
+  main.insertAdjacentHTML('beforeend', '<div class="container-arraste"> <p id="arraste2"> ▲ arraste para cima ▲ </p></div> ');
 }, 31000); //31seg
