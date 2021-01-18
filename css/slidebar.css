@@ -1,17 +1,23 @@
 .container-slider{
   position:absolute;
-  top: 50%;
+  top: 52%;
   transform: translateY(-50%);
-  width: 100px;
+  width: 6.9vw;  /*não mexer está perfeito 6.9vw*/
+  height:80vh;
+  /*border: 1px solid black;*/
+  z-index: 1;
 }
 
 .controls{
-  position:absolute;
+  position:relative;
   display: flex;
   justify-content: space-between;
-  width:100px;
-  bottom: 10%;
+  align-items: flex-end;
+  width: 6.9vw;  /*não mexer está perfeito */
+  height: 20px;
+  top:95%;
   z-index: 2;
+  /*border: 1px solid red;*/
 }
 .arrow {
   border: 2px solid black;
@@ -26,7 +32,7 @@
 }
 
 .up {
-  margin-top: 10px;
+  margin-top: 9px;
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
 }
@@ -36,7 +42,9 @@
 }
 
 .slider{
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .item{
@@ -60,4 +68,23 @@
   max-width: 100%;
   height: auto;
   transition:0.3s;
+}
+
+/* telemovel */
+@media screen and (max-width: 600px) {
+  .controls{
+    top:35%;
+  }
+}
+
+  /* tablets: */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .controls{
+    top:45%;
+  }
+}
+
+/* desktop computer */
+@media screen and (min-width: 768px) {
+
 }
