@@ -1,8 +1,8 @@
 function saidiabo(event) {
 
 
-  //lê o y (- para ir para o scroll ser para baixo, o num é a velocidade a que acontece,quanto menor mais lento)
-  opacidade += event.deltaY * -0.0001;
+  //lê o y (- (antes do numero)para ir para o scroll ser para cima, o num é a velocidade a que acontece,quanto menor mais lento)
+  opacidade += event.deltaY * 0.0001;
 
   // restringir a opacidade máximo 1 e mínimo 0
   opacidade = Math.min(Math.max(0, opacidade), 1);
@@ -15,7 +15,7 @@ function saidiabo(event) {
     ret.style.zIndex = -1;
     ret.style.visibility = "hidden";
 
-//o arrasta desaparece 
+//o arrasta desaparece
      let arraste = document.querySelector('.container-arraste');
      arraste.remove();
   }
