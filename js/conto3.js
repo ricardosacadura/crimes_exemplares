@@ -23,5 +23,5 @@ if (!isIE11()) {
 setTimeout(function(){
   window.onwheel = saidiabo;
   let main = document.querySelector('main');
-  main.insertAdjacentHTML('beforeend', '<div class="container-arraste"> <p id="arraste2"> ↓ arraste para baixo ↓ </p></div> ');
+  main.insertAdjacentHTML('beforeend', '<div class="container-arraste"> <p id="arraste2"> ↑ arraste para cima ↑ </p></div> ');
 }, 10000); //10seg

@@ -1,13 +1,24 @@
+.container-slider::-webkit-scrollbar {
+  width: 4px;
+}
 
+.container-slider::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.container-slider::-webkit-scrollbar-thumb {
+  background-color: red;
+  outline: 1px solid red;
+}
 .container-slider{
   position:absolute;
   display: flex;
   width: 6.9vw;  /*não mexer está perfeito 6.9vw*/
-  height:88vh;
+  height:71vh;
   z-index: 1;
   overflow-y: auto;
   overflow-x: hidden;
-  bottom: 0;
+  top: 14%;
   -webkit-overflow-scrolling: touch;
 }
 
