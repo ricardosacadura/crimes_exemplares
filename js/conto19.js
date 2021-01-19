@@ -14,7 +14,7 @@ function isIE11() {
 //caso não seja, execute
 if (!isIE11()) {
   let player = document.getElementById('player');
-  player.src = supportsHEVCAlpha() ? 'vid/conto21/conto_21.mov' : 'vid/conto21/conto_21.webm';
+  player.src = supportsHEVCAlpha() ? 'vid/conto19/conto_19.mov' : 'vid/conto19/conto_19.webm';
 }
 
 //retangulo podes sair :)
