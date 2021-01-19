@@ -23,6 +23,7 @@
   overflow-x: hidden;
   top: 111px;
   -webkit-overflow-scrolling: touch;
+  min-height: 41.5vw;
 }
 
 .slider {
@@ -53,21 +54,4 @@
   max-width: 100%;
   height: auto;
   transition: 0.3s;
-}
-
-/* telemovel */
-@media screen and (max-width: 600px) {
-  
-}
-
-/* tablets: */
-@media screen and (min-width: 600px) and (max-width: 768px) {
-
-}
-
-/* desktop computer */
-@media screen and (min-width: 768px) {
-  .container-slider {
-    min-height: 41.5vw;
-  }
 }

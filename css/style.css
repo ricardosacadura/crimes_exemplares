@@ -94,7 +94,7 @@ p {
   visibility: hidden;
 }
 
-/* fim contos selecionados on hover*/
+/* Titulo: Max Aub Crimes EXEMPLARES*/
 #intro span {
   margin-left: 40px;
 }
@@ -103,22 +103,21 @@ p {
   text-align: center;
 }
 
-/* imagens dos contos na grelha*/
+/* container das imagens dos contos na grelha*/
 .container-crimes {
   display: grid;
-  /*largura do container*/
   width: 100%;
   /*centrar*/
   margin: 0 auto;
   margin-top: 0%;
-  /*isto significa que a grid é de 4 colunas/edit:4 ou 3*/
+  /* grid é de 4 colunas*/
   grid-template-columns: repeat(3, 1fr);
 }
-
+/* imagens dos contos na grelha*/
 .crime {
   width: 27%;
   height: auto;
-  /*isto aumenta o espaçamento entre as cards*/
+  /*aumenta o espaçamento entre as cards*/
   margin: 3%;
   align-self: center;
   justify-self: center;
@@ -135,7 +134,6 @@ p {
   transform: scale(1.05, 1.05);
 }
 
-/* fim imagens dos contos na grelha*/
 /*nav bar */
 .navbar {
   bottom: 0;

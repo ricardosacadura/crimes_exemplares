@@ -50,8 +50,8 @@
 
 /*videos*/
 .retanguloconto {
-  padding-top: 52.17391304%;
   /* proporção do video = 23:12, logo 12/23 = 0,5217391304 * 100% = 52.17391304%*/
+  padding-top: 52.17391304%;
   position: absolute;
   width: 100%;
   background-color: red;
