@@ -18,8 +18,9 @@
   z-index: 1;
   overflow-y: auto;
   overflow-x: hidden;
-  top: 14%;
+  top: 111px;
   -webkit-overflow-scrolling: touch;
+  min-height: 52.17391304%;
 }
 
 .slider{
