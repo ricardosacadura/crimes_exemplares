@@ -5,38 +5,37 @@
   clear: both;
 }
 
-[class*='col-']{
+[class*='col-'] {
   float: left;
   margin-top: 40px;
   margin-right: 1.5%;
-
 }
 
 [class*='col-']:last-of-type {
   padding-right: 0;
 }
 
-[class*='col-'] a{
+[class*='col-'] a {
   color: black;
 }
 
-[class*='col-'] a:hover{
+[class*='col-'] a:hover {
   color: red;
 }
 
-[class*='col-'] p:hover{
+[class*='col-'] p:hover {
   color: red;
   font-size: 16px;
 }
 
-.col-main-content{
-  width:70%;
+.col-main-content {
+  width: 70%;
   height: 600px;
 }
 
-.col-sidebar{
-  width:8%;
-  height:650px;
+.col-sidebar {
+  width: 8%;
+  height: 650px;
   margin-left: 1.5%;
   display: grid;
   /*isto significa que a grid é de 4 colunas*/
@@ -44,33 +43,32 @@
 }
 
 /*header titulo e seta para ir para a homepage*/
-.info h1{
+.info h1 {
   margin-left: 11%;
 }
 
-.info{
+.info {
   padding-bottom: 10px;
-
   position: relative;
 }
 
-.info ::before{
+.info ::before {
   content: '';
   height: 4px;
-  width:80%;
+  width: 80%;
   background: black;
-  position:absolute;
+  position: absolute;
   left: 11%;
   bottom: 0;
 }
 
-.info img{
+.info img {
   position: absolute;
   top: 10%;
-  left:3.5%;
+  left: 3.5%;
 }
 
-.info img:hover{
-  left:2%;
+.info img:hover {
+  left: 2%;
   transition: 0.4s;
 }

@@ -1,32 +1,32 @@
 @font-face {
-    font-family: 'Solide Mirage_Etroit';
-    src:    url('../webfonts/Etroit/Solide_Mirage-Etroit_web.eot');
-    src:    url('../webfonts/Etroit/Solide_Mirage-Etroit_web.eot?#iefix') format('embedded-opentype'),
-            url('../webfonts/Etroit/Solide_Mirage-Etroit_web.woff') format('woff'),
-            url('../webfonts/Etroit/Solide_Mirage-Etroit_web.woff2') format('woff2'),
-            url('../webfonts/Etroit/Solide_Mirage-Etroit_web.ttf') format('truetype'),
-            url('../webfonts/Etroit/Solide_Mirage-Etroit_web.svg#svgFontName') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Solide Mirage_Etroit';
+  src: url('../webfonts/Etroit/Solide_Mirage-Etroit_web.eot');
+  src: url('../webfonts/Etroit/Solide_Mirage-Etroit_web.eot?#iefix') format('embedded-opentype'),
+    url('../webfonts/Etroit/Solide_Mirage-Etroit_web.woff') format('woff'),
+    url('../webfonts/Etroit/Solide_Mirage-Etroit_web.woff2') format('woff2'),
+    url('../webfonts/Etroit/Solide_Mirage-Etroit_web.ttf') format('truetype'),
+    url('../webfonts/Etroit/Solide_Mirage-Etroit_web.svg#svgFontName') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'OCR_A';
-    src:    url('../webfonts/OCR/OCRAStd.otf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'OCR_A';
+  src: url('../webfonts/OCR/OCRAStd.otf');
+  font-weight: normal;
+  font-style: normal;
 }
 
-*, *:after, *:before{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-cursor: url('../img/black_cursor.png'), auto;
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url('../img/black_cursor.png'), auto;
 }
 
 /* retangulo do index */
-.retangulo{
-  top:0px;
+.retangulo {
+  top: 0px;
   width: 100%;
   height: 100%;
   background-color: red;
@@ -35,60 +35,71 @@ cursor: url('../img/black_cursor.png'), auto;
   background: red;
   z-index: 2;
   display: flex;
-  align-items:center;
-  justify-content:center;
+  align-items: center;
+  justify-content: center;
 }
+
 @keyframes arrastaanim1 {
-  0%   {color:white; top:100px;}
-  50%   {color:red; top:0px;}
-  100% {color:white; top:100px;}
+  0% {
+    color: white;
+  }
+
+  50% {
+    color: red;
+  }
+
+  100% {
+    color: white;
+  }
 }
-#arraste{
-color: white;
-text-align: center;
-vertical-align: middle;
-animation: arrastaanim1 1.3s linear infinite;
+
+#arraste {
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  animation: arrastaanim1 1.3s linear infinite;
 }
 
 /*fim do retangulo do index*/
-
-body{
+body {
   height: 90vh;
 }
 
-h1{
-    margin-top: 30px;
-    font-family: 'Solide Mirage_Etroit';
-    font-size: 35px;
+h1 {
+  margin-top: 30px;
+  font-family: 'Solide Mirage_Etroit';
+  font-size: 35px;
 }
 
-p{
+p {
   font-family: 'OCR_A';
   font-size: 16px;
 }
 
 /* contos selecionados on hover*/
-#intro h1{
+#intro h1 {
   visibility: visible;
 }
 
-#intro h1:hover + #selecao {visibility: visible;}
+#intro h1:hover+#selecao {
+  visibility: visible;
+}
 
-#selecao{
-  margin-top:1vh;
+#selecao {
+  margin-top: 1vh;
   text-align: center;
   font-family: 'OCR_A';
   font-size: 20px;
-    color: red;
+  color: red;
   visibility: hidden;
 }
-/* fim contos selecionados on hover*/
 
-#intro span{
+/* fim contos selecionados on hover*/
+#intro span {
   margin-left: 40px;
 }
 
-#intro h1{
+#intro h1 {
   text-align: center;
 }
 
@@ -98,7 +109,7 @@ p{
   /*largura do container*/
   width: 100%;
   /*centrar*/
-  margin:0 auto;
+  margin: 0 auto;
   margin-top: 0%;
   /*isto significa que a grid é de 4 colunas/edit:4 ou 3*/
   grid-template-columns: repeat(3, 1fr);
@@ -106,52 +117,50 @@ p{
 
 .crime {
   width: 27%;
-  height:auto;
+  height: auto;
   /*isto aumenta o espaçamento entre as cards*/
   margin: 3%;
   align-self: center;
   justify-self: center;
 }
 
-.crime img{
+.crime img {
   max-width: 100%;
   height: auto;
 }
 
-.crime:hover{
+.crime:hover {
   opacity: 70%;
   transition: 0.2s;
-  transform: scale(1.05 , 1.05);
+  transform: scale(1.05, 1.05);
 }
 
 /* fim imagens dos contos na grelha*/
-
 /*nav bar */
-.navbar{
-  bottom:0;
+.navbar {
+  bottom: 0;
   width: 100%;
   position: absolute;
   height: 10vh;
   margin-bottom: 6vh;
 }
 
-.navbar-bottom{
+.navbar-bottom {
   z-index: 1;
 }
 
-ul{
+ul {
   width: 100%;
-  top: 50%; left: 50%;
-
+  top: 50%;
+  left: 50%;
   padding: 0px;
   list-style: none;
   text-align: center;
   display: inline-flex;
   justify-content: space-around;
-
 }
 
-li{
+li {
   position: relative;
   font-family: 'OCR_A';
   font-size: 20px;
@@ -160,7 +169,7 @@ li{
   color: black;
 }
 
-.container-nav{
+.container-nav {
   width: 65%;
   margin: 0 auto;
   margin-top: 40px;
@@ -174,23 +183,24 @@ li{
   justify-content: space-around;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
 
-a:hover{
-  color:red;
+a:hover {
+  color: red;
 }
 
-.linknav{
+.linknav {
   position: relative;
 }
 
-.linknav:after{
+.linknav:after {
   content: '';
   position: absolute;
-  width: 0; height: 3px;
+  width: 0;
+  height: 3px;
   display: block;
   margin-top: 1px;
   right: 0;
@@ -199,34 +209,34 @@ a:hover{
   -webkit-transition: width .2s ease;
 }
 
-.linknav:hover:after{
+.linknav:hover:after {
   width: 100%;
   left: 0;
   background: red;
 }
-.container-nav a:last-of-type{
+
+.container-nav a:last-of-type {
   margin-right: 0%;
 }
 
 /*fim nav bar */
-
-
 /* telemovel */
 @media screen and (max-width: 600px) {
-
   .container-crimes {
-   height: 80vh;
+    height: 80vh;
   }
+
   .crime {
     width: 60%;
   }
 }
 
-  /* tablets: */
+/* tablets: */
 @media screen and (min-width: 600px) and (max-width: 768px) {
   .container-crimes {
-   height: 75vh;
+    height: 75vh;
   }
+
   .crime {
     width: 65%;
   }

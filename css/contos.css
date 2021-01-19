@@ -1,35 +1,38 @@
 /*header seta e tirar o ret preto*/
-.info ::before{
+.info ::before {
   display: none;
 }
-.info img{
+
+.info img {
   position: absolute;
   top: 360%;
-  transform: translate3d(3.5%,0px,0px);
+  transform: translate3d(3.5%, 0px, 0px);
   transition: transform 1s ease-out;
 }
 
-.info img:hover{
-  transform: translate3d(2%,0px,0px);
+.info img:hover {
+  transform: translate3d(2%, 0px, 0px);
 }
 
 /*adaptações da grid */
-[class*='col-']{
+[class*='col-'] {
   margin-top: 100px;
-
 }
 
-.col-main-content{
+.col-main-content {
   position: relative;
-  width:80%;
-  height:72.63922518159806vh;
+  width: 80%;
+  height: 72.63922518159806vh;
 }
 
 /*navbar da pagina dos contos quando se abre a página*/
 .navbar {
   animation: one-time-animation 1s forwards 1;
   animation-name: navparacima;
-  top:0; bottom: 0;left: 0; right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   margin: auto;
 }
 
@@ -46,8 +49,9 @@
 }
 
 /*videos*/
-.retanguloconto{
-  padding-top: 52.17391304%; /* proporção do video = 23:12, logo 12/23 = 0,5217391304 * 100% = 52.17391304%*/
+.retanguloconto {
+  padding-top: 52.17391304%;
+  /* proporção do video = 23:12, logo 12/23 = 0,5217391304 * 100% = 52.17391304%*/
   position: absolute;
   width: 100%;
   background-color: red;
@@ -81,29 +85,37 @@
 }
 
 .video-vermelho video {
-position:absolute;
-width:100%;
+  position: absolute;
+  width: 100%;
 }
 
 .container-arraste {
-position: absolute;
-width: 100%;
-display: inline-flex;
-align-items:center;
-justify-content:center;
-bottom:2%;
-left:0;
+  position: absolute;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 2%;
+  left: 0;
 }
 
 @keyframes arrastaanim2 {
-  0%   {color:white; top:100px;}
-  50%   {color:black; top:0px;}
-  100% {color:white; top:100px;}
+  0% {
+    color: white;
+  }
+
+  50% {
+    color: black;
+  }
+
+  100% {
+    color: white;
+  }
 }
 
-#arraste2{
-color: white;
-text-align: center;
-vertical-align: middle;
-animation: arrastaanim2 1.3s ease-in infinite;
+#arraste2 {
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  animation: arrastaanim2 1.3s ease-in infinite;
 }
